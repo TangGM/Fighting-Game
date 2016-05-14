@@ -12,6 +12,9 @@
 		7E24CDBE1C2698E50089830F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E24CDBC1C2698E50089830F /* Main.storyboard */; };
 		7E24CDC01C2698E50089830F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E24CDBF1C2698E50089830F /* Assets.xcassets */; };
 		7E24CDC31C2698E50089830F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E24CDC11C2698E50089830F /* LaunchScreen.storyboard */; };
+		7E24CDCB1C2699A20089830F /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E24CDCA1C2699A20089830F /* Character.swift */; };
+		7E78E18F1CE74C6F00377F2D /* Soilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E78E18E1CE74C6F00377F2D /* Soilder.swift */; };
+		7E78E1911CE74F5500377F2D /* Erc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E78E1901CE74F5500377F2D /* Erc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		7E24CDBF1C2698E50089830F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E24CDC21C2698E50089830F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E24CDC41C2698E50089830F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E24CDCA1C2699A20089830F /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		7E78E18E1CE74C6F00377F2D /* Soilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Soilder.swift; sourceTree = "<group>"; };
+		7E78E1901CE74F5500377F2D /* Erc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Erc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				7E24CDBF1C2698E50089830F /* Assets.xcassets */,
 				7E24CDC11C2698E50089830F /* LaunchScreen.storyboard */,
 				7E24CDC41C2698E50089830F /* Info.plist */,
+				7E24CDCA1C2699A20089830F /* Character.swift */,
+				7E78E18E1CE74C6F00377F2D /* Soilder.swift */,
+				7E78E1901CE74F5500377F2D /* Erc.swift */,
 			);
 			path = "Fighting Game";
 			sourceTree = "<group>";
@@ -136,7 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E78E1911CE74F5500377F2D /* Erc.swift in Sources */,
+				7E24CDCB1C2699A20089830F /* Character.swift in Sources */,
 				7E24CDBB1C2698E50089830F /* ViewController.swift in Sources */,
+				7E78E18F1CE74C6F00377F2D /* Soilder.swift in Sources */,
 				7E24CDB91C2698E50089830F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +297,7 @@
 				7E24CDC91C2698E50089830F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
