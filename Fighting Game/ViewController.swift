@@ -13,6 +13,9 @@ class ViewController: UIViewController {
     @IBOutlet var soilderImg: UIImageView!
     @IBOutlet var ercImg: UIImageView!
     @IBOutlet var meassage: UILabel! // typp
+    @IBOutlet var restartBtn: UIButton!
+    @IBOutlet var p1AttackBtn: UIButton!
+    @IBOutlet var p2AttackBtn: UIButton!
     
     
     var p1: Soilder!
@@ -24,8 +27,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        p1 = Soilder(name: "Tang", hp: 220, attackPwr: 70)
-        p2 = Erc(name: "Brother", hp: 170, attckPwr: 90)
+        p1 = Soilder(name: "Tang", hp: 2200, attackPwr: 70)
+        p2 = Erc(name: "Brother", hp: 1700, attckPwr: 90)
         meassage.text = "\(p2.name) VS \(p1.name)"
     }
 
@@ -43,7 +46,8 @@ class ViewController: UIViewController {
         if !p2.isAlive {
             ercImg.hidden = true
             meassage.text = "SOIDLER WINS"
-            timer = NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: "restartGame", userInfo: nil, repeats: false)
+            restartBtn.hidden = false
+            p2AttackBtn.enabled = false
         }
 
         
@@ -61,19 +65,25 @@ class ViewController: UIViewController {
         if !p1.isAlive {
             soilderImg.hidden = true
             meassage.text = "ERC WINS"
-            timer = NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: "restartGame", userInfo: nil, repeats: false)
+            restartBtn.hidden = false
+            p1AttackBtn.enabled = false
         }
         
         
     }
     
-    func restartGame() {
-        
+    @IBAction func restartTapped(sender: AnyObject) {
+    
+        restartBtn.hidden = true
         soilderImg.hidden = false
         ercImg.hidden = false
+        p1AttackBtn.enabled = true
+        p2AttackBtn.enabled = true
         meassage.text = "RESTART!"
         timer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: "viewDidLoad", userInfo: nil, repeats: false)
     }
+    
+    
 
     
 

@@ -10,6 +10,7 @@
             <string>Minecraft</string>
             <string>Minecraft</string>
             <string>Minecraft</string>
+            <string>Minecraft</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -56,7 +57,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIGHT!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dmk-xp-Alu">
-                                <rect key="frame" x="261" y="538" width="80" height="47"/>
+                                <rect key="frame" x="260" y="538" width="80" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="Pce-fI-Pdw"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="47" id="xlR-Ub-Ize"/>
@@ -93,6 +94,20 @@
                                     <action selector="p2AttackTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Q5-cB-IDP"/>
                                 </connections>
                             </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JlU-QK-X9b">
+                                <rect key="frame" x="242" y="424" width="117" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="117" id="DVh-1W-dyk"/>
+                                    <constraint firstAttribute="height" constant="76" id="MtD-AO-G1S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="17"/>
+                                <state key="normal" title="RESTART" backgroundImage="player2attackbtn">
+                                    <color key="titleColor" red="0.99851895729999995" green="0.99851895729999995" blue="0.99851895729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="restartTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vn0-r5-8TQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -104,6 +119,7 @@
                             <constraint firstItem="54K-hp-87A" firstAttribute="top" secondItem="dTR-Cf-F09" secondAttribute="bottom" constant="10" id="Jlt-64-bbA"/>
                             <constraint firstItem="WTw-fI-SuM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OSC-1c-z3S"/>
                             <constraint firstAttribute="trailing" secondItem="WTw-fI-SuM" secondAttribute="trailing" id="PC3-qG-7tN"/>
+                            <constraint firstItem="JlU-QK-X9b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c7m-Cg-leG"/>
                             <constraint firstAttribute="trailing" secondItem="bu1-fW-tlq" secondAttribute="trailing" id="f82-kE-0d3"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fsM-et-h7L" secondAttribute="bottom" constant="5" id="fdL-e5-6vP"/>
                             <constraint firstItem="fsM-et-h7L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hFq-9v-mRH"/>
@@ -112,6 +128,7 @@
                             <constraint firstItem="MWP-XM-MyU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="57" id="m4n-ju-OU0"/>
                             <constraint firstItem="cfC-gT-QM8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="45" id="m7K-2m-yQi"/>
                             <constraint firstItem="WTw-fI-SuM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mef-AY-9UH"/>
+                            <constraint firstItem="bu1-fW-tlq" firstAttribute="top" secondItem="JlU-QK-X9b" secondAttribute="bottom" constant="20" id="nl4-gH-fR7"/>
                             <constraint firstItem="Dmk-xp-Alu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="phS-Vk-dLw"/>
                             <constraint firstItem="fsM-et-h7L" firstAttribute="top" secondItem="cfC-gT-QM8" secondAttribute="bottom" constant="5" id="yhn-w0-53c"/>
                             <constraint firstItem="bu1-fW-tlq" firstAttribute="top" secondItem="54K-hp-87A" secondAttribute="bottom" id="zSu-sC-vr9"/>
@@ -120,6 +137,9 @@
                     <connections>
                         <outlet property="ercImg" destination="cfC-gT-QM8" id="7MN-Ov-ooM"/>
                         <outlet property="meassage" destination="Dmk-xp-Alu" id="kxo-mf-7jB"/>
+                        <outlet property="p1AttackBtn" destination="dTR-Cf-F09" id="rmM-7b-9Sl"/>
+                        <outlet property="p2AttackBtn" destination="MWP-XM-MyU" id="RFR-er-L0s"/>
+                        <outlet property="restartBtn" destination="JlU-QK-X9b" id="TP2-Zs-KAm"/>
                         <outlet property="soilderImg" destination="54K-hp-87A" id="nDc-o7-yeJ"/>
                     </connections>
                 </viewController>
