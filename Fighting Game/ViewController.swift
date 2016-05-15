@@ -9,10 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    
+    var p1: Soilder!
+    var p2: Erc!
+    var msg: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
