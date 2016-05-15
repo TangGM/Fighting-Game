@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     
     var p1: Soilder!
     var p2: Erc!
+    var timer: NSTimer!
+
 
 
     override func viewDidLoad() {
@@ -41,7 +43,7 @@ class ViewController: UIViewController {
         if !p2.isAlive {
             ercImg.hidden = true
             meassage.text = "SOIDLER WINS"
-            
+            timer = NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: "restartGame", userInfo: nil, repeats: false)
         }
 
         
@@ -59,9 +61,18 @@ class ViewController: UIViewController {
         if !p1.isAlive {
             soilderImg.hidden = true
             meassage.text = "ERC WINS"
+            timer = NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: "restartGame", userInfo: nil, repeats: false)
         }
         
         
+    }
+    
+    func restartGame() {
+        
+        soilderImg.hidden = false
+        ercImg.hidden = false
+        meassage.text = "RESTART!"
+        timer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: "viewDidLoad", userInfo: nil, repeats: false)
     }
 
     
