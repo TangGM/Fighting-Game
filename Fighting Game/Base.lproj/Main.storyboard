@@ -75,6 +75,9 @@
                                 <state key="normal" title="ATTACK" backgroundImage="player1attackbtn">
                                     <color key="titleColor" red="0.99851895729999995" green="0.99851895729999995" blue="0.99851895729999995" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="p1AttackTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N9Z-5i-LbO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWP-XM-MyU">
                                 <rect key="frame" x="77" y="245" width="110" height="60"/>
@@ -86,6 +89,9 @@
                                 <state key="normal" title="ATTACK" backgroundImage="player2attackbtn">
                                     <color key="titleColor" red="0.99851895729999995" green="0.99851895729999995" blue="0.99851895729999995" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="p2AttackTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Q5-cB-IDP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -111,6 +117,11 @@
                             <constraint firstItem="bu1-fW-tlq" firstAttribute="top" secondItem="54K-hp-87A" secondAttribute="bottom" id="zSu-sC-vr9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ercImg" destination="cfC-gT-QM8" id="7MN-Ov-ooM"/>
+                        <outlet property="meassage" destination="Dmk-xp-Alu" id="kxo-mf-7jB"/>
+                        <outlet property="soilderImg" destination="54K-hp-87A" id="nDc-o7-yeJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
